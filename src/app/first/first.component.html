@@ -1,0 +1,15 @@
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">{{data.packName}}</h5>
+            <h6 class="card-price text-center">{{data.amount}}<span class="period">{{data.per}}</span></h6>
+            <hr>
+            <ul class="fa-ul" *ngFor="let item of data.liText;let index as i">
+              <li>
+                <span *ngIf="checked(data.liText.indexOf(item));else elseblo"><span class="fa-li" ><i class="fas fa-check"></i></span></span>
+                <ng-template #elseblo><span class="fa-li" ><i class="fas fa-times"></i></span></ng-template>
+                <span [ngClass]="textmuted(data.liText.indexOf(item))">{{item}}</span>
+              </li>
+              </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">{{data.button}}</a>
+          </div>
+        </div>

@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularCards"
+    }
+  },
+  "defaultProject": "angularCards",
+  "cli": {
+    "analytics": "3c40f929-0aac-4733-a680-e9216ef12b25"
+  }
 }
